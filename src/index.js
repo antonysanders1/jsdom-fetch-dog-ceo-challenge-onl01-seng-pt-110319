@@ -10,4 +10,11 @@ function fetchImages() {
   .then(json => renderImage(json.message));
 }
 
-
+function renderImage(dogImages) {
+    const container = document.getElementById('dog-image-container');
+    dogImages.forEach(dogImage => {
+        const img = document.createElement('img');
+        img.src = dogImage;
+        container.appendChild(img);
+    })
+}
