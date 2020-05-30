@@ -18,6 +18,7 @@ function renderImage(dogImages) {
     dogImages.forEach(dogImage => {
         const img = document.createElement('img');
         img.src = dogImage;
+        img.style.width = "200px"
         container.appendChild(img);
     })
 }
