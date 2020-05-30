@@ -19,6 +19,7 @@ function renderImage(dogImages) {
         const img = document.createElement('img');
         img.src = dogImage;
         img.style.width = "200px"
+        img.style.marginLeft = "10px"
         container.appendChild(img);
     })
 }
