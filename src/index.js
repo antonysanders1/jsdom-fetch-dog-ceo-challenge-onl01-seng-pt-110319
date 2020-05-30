@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 function fetchImages() {
-    const imgUrl = "https://dog.ceo/api/breeds/image/random/7"
+    const imgUrl = "https://dog.ceo/api/breeds/image/random/9"
     fetch(imgUrl)
         .then(resp => resp.json())
         .then(json => renderImage(json.message));
